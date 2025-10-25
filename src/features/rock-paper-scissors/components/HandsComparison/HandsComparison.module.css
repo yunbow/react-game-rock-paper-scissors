@@ -1,0 +1,24 @@
+.handsComparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.vs {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-destructive);
+}
+
+@media (max-width: 600px) {
+  .handsComparison {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .vs {
+    margin: 10px 0;
+  }
+}
