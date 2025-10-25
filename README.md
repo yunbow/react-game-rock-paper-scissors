@@ -30,42 +30,25 @@ https://yunbow.github.io/react-game-rock-paper-scissors/demo/
 
 ```
 src/
-├── features/                    # 機能別モジュール
-│   └── rock-paper-scissors/     # じゃんけんゲーム機能
-│       ├── components/          # 機能固有のコンポーネント
+├── features/                           # 機能別モジュール
+│   └── rock-paper-scissors/            # じゃんけんゲーム機能
+│       ├── components/                 # 機能固有のコンポーネント
 │       │   ├── RockPaperScissorsGame/  # ゲーム全体
 │       │   ├── ChoiceButtons/          # 選択ボタン群
 │       │   ├── HandDisplay/            # 手の表示
 │       │   ├── HandsComparison/        # 対戦表示
 │       │   └── ScoreBoard/             # スコアボード
 │       ├── useRockPaperScissors.ts     # ゲームロジックフック
-│       ├── types.ts                     # 型定義
-│       ├── config.ts                    # 設定値
-│       └── index.ts                     # 公開API
-├── components/                  # 共通UIコンポーネント
-│   ├── Button/                  # 汎用ボタン
-│   ├── Text/                    # テキスト表示
-│   └── HandIcon/                # アイコン表示
-├── stories/                     # Storybook用ストーリー
-├── App.tsx                      # メインアプリ
-└── main.tsx                     # エントリーポイント
+│       ├── types.ts                    # 型定義
+│       └── config.ts                   # 設定値
+├── components/                         # 共通UIコンポーネント
+│   ├── Button/                         # 汎用ボタン
+│   ├── Text/                           # テキスト表示
+│   └── HandIcon/                       # アイコン表示
+├── stories/                            # Storybook用ストーリー
+├── App.tsx                             # メインアプリ
+└── main.tsx                            # エントリーポイント
 ```
-
-## アーキテクチャ構成
-
-### 機能別モジュール（Features）
-アプリケーションの主要機能を独立したモジュールとして管理します。
-
-**rock-paper-scissors/**
-- ゲームコンポーネント、カスタムフック、型定義、設定を一箇所に集約
-- 機能の追加・変更・削除が容易
-- テストやメンテナンスが簡単
-
-### 共通UIコンポーネント（Components）
-複数の機能で再利用される汎用的なUI要素です。
-- `Button` - 汎用ボタンコンポーネント
-- `Text` - テキスト表示コンポーネント
-- `HandIcon` - アイコン表示コンポーネント
 
 ## スクリプト
 
