@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { RockPaperScissorsGame } from '../../../features/rock-paper-scissors';
+import { RockPaperScissorsGame } from '../../features/rock-paper-scissors';
 
 const meta: Meta<typeof RockPaperScissorsGame> = {
   title: 'features/rock-paper-scissors/RockPaperScissorsGame',
