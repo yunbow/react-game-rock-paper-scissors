@@ -1,0 +1,23 @@
+.scoreBoard {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  padding: 15px;
+  background-color: var(--color-secondary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.scoreItem {
+  text-align: center;
+}
+
+.scoreItem p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.count {
+  color: var(--color-destructive);
+  font-size: 22px;
+}
